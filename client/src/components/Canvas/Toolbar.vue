@@ -42,11 +42,11 @@ export default {
 
   methods: {
     updatePressed(name) {
-      this.$store.commit('updatePressed', name);
+      this.$store.dispatch('toolbarstore/updatePressed', name);
     },
 
     toggleDraw() {
-      this.$store.commit('toggleDraw');
+      this.$store.dispatch('toolbarstore/toggleDraw');
     },
 
     toggleHidden() {

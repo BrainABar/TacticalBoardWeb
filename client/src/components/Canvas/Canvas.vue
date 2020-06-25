@@ -23,11 +23,11 @@ export default {
 
   computed: {
     lastPressed() {
-      return this.$store.state.pressed;
+      return this.$store.getters['toolbarstore/lastPressed'];
     },
 
     pressCount() {
-      return this.$store.state.pressCount;
+      return this.$store.getters['toolbarstore/pressCount'];
     },
   },
 
